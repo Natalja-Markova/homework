@@ -40,6 +40,11 @@ public class AufgabeHashMap {
         for (Map.Entry<String, String> entry : entries) {
             out.println("Страна: " + entry.getKey() + ", Столица: " + entry.getValue());
         }
+         out.println("После дополнения в список Испании:");
+        capitalMap.put("Испания", "Мадрид");
+        for (Map.Entry<String, String> entry : entries) {
+            out.println("Страна: " + entry.getKey() + ", Столица: " + entry.getValue());
+        }
     }
 }
 
