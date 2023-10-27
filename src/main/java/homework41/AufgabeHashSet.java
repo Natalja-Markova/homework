@@ -34,6 +34,15 @@ public class AufgabeHashSet {
             out.println(name);
             out.println(name.hashCode());
         }
+       boolean containsSpain = countriesSet.contains("Испания");
+        if (!containsSpain) {
+            countriesSet.add("Испания");
+        }
+
+        out.println("Обновленные элементы countriesSet:");
+        for (String country : countriesSet) {
+            out.println(country);
+        } 
     }
 
 }
